@@ -13,7 +13,7 @@ public class ExceptionService {
     public boolean isTrueForTest1(){
         boolean flag = false;
         if(!flag){
-            throw new BadRequestException("test1은 올바르지 않은 요청입니다."); //
+            throw new BadRequestException("test1은 올바르지 않은 요청입니다."); // 커스텀 예외를 만들고, 원하는 방식으로 상태코드를 보내는 것도 가능.
             //throw new ArithmeticException("test1의 Exception"); //Handler가 예외를 처리하지 못하면 기본적으로 500번 에러를 발생시킴
         }
 
